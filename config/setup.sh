@@ -836,7 +836,7 @@ func_go_deps(){
   sudo mkdir -p /usr/src/go/
 
   if [ ! -f "/var/lib/veil-evasion/go/bin/go" ]; then
-    if [ "${arch}" == "x86_64" ]; then
+    if [ "${arch}" == "aarch64" ]; then
       echo -e "\n\n [*] ${YELLOW}Installing Go x86_64 (via TAR)${RESET}\n"
 
       file="${dependenciesdir}/go1.7.5.linux-amd64.tar.gz"
